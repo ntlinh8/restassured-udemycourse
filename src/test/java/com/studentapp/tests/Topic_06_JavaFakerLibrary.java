@@ -15,7 +15,7 @@ import io.restassured.http.ContentType;
 
 public class Topic_06_JavaFakerLibrary extends BaseTest{
 	
-	@DisplayName("Update the ")
+	@DisplayName("Update the Student information")
 	@Test
 	void updateStudentInformationByPutRequest() {
 		
