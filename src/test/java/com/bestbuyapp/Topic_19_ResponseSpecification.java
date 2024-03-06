@@ -59,16 +59,28 @@ public class Topic_19_ResponseSpecification {
 		System.out.println("----- END TEST -----");
 	}
 	
-	@DisplayName("Verify multiple values in the same statement")
+	@DisplayName("TC01: Verify multiple values in the same statement")
 	@Test
 	public void TC_01_CheckMutipleValues() {
-		 given()
+		given()
 		.spec(requestSpecification)
 		.when()
 		.get("/stores")
 		.then()
 		.spec(responseSpecification);
-		 
+		
+	}
+	
+	@DisplayName("TC02: Verify multiple values in the same statement")
+	@Test
+	public void TC_02_CheckMutipleValues() {
+		 given()
+		.spec(requestSpecification)
+		.when()
+		.get("/stores")
+		.then()
+		.spec(responseSpecification)
+		.body("data.name", hasItems("Roseville", "Burnsville"));
 	}
 	
 	
