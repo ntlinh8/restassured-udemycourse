@@ -13,6 +13,7 @@
 		<javafaker.version>1.0.2</javafaker.version>
 		<jsonpath.version>2.9.0</jsonpath.version>
 		<hamcrest.version>2.2</hamcrest.version>
+		<jsonassert.version>1.5.1</jsonassert.version>
 	</properties>
 
 	<dependencies>
@@ -52,6 +53,12 @@
 			<groupId>org.hamcrest</groupId>
 			<artifactId>hamcrest</artifactId>
 			<version>${hamcrest.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.skyscreamer</groupId>
+			<artifactId>jsonassert</artifactId>
+			<version>${jsonassert.version}</version>
 		</dependency>
 
 	</dependencies>
